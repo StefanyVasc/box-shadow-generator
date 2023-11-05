@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #311b92;
+    background-color: #90B2D8;
 }
 
 label {
@@ -32,7 +32,7 @@ label {
 }
 
 #preview {
-    background-color: #311b92;
+    background-color: #90B2D8;
     width: 200px;
     height: 200px;
     position: relative;
@@ -70,7 +70,7 @@ input[type="checkbox"] {
 }
 
 .code-container button {
-    background-color: #311b92;
+    background-color: #90B2D8;
     border-radius: 5px;
     cursor: pointer;
     border: none;
