@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Box Shadow Generator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="result">
+      <div class="preview"></div>
+    </div>
+
+    <div class="settings">
+      <div class="range-wrapper">
+        <label for="x-shadow">Horizontal Shadow :</label>
+        <input type="range" min="-100" max="100" id="x-shadow" value="-6">
+      </div>
+
+      <div class="range-wrapper">
+        <label for="y-shadow">Vertical Shadow :</label>
+        <input type="range" min="-100" max="100" id="y-shadow" value="15">
+      </div>
+
+      <div class="range-wrapper">
+        <label for="blur-radius">Blur Radius :</label>
+        <input type="range" min="0" max="100" id="blur-radius" value="30">
+      </div>
+
+      <div class="range-wrapper">
+        <label for="spread-r">Spread Radius :</label>
+        <input type="range" min="-50" max="50" id="spread-r" value="6">
+      </div>
+
+      <div class="range-wrapper">
+        <label for="border-r">Border Radius :</label>
+        <input type="range" min="0" max="100" id="border-r" step="1" value="70">
+      </div>
+
+      <div class="range-wrapper">
+        <label for="shadow-opacity">Shadow Opacity :</label>
+        <input type="range" min="0" max="1" id="shadow-opacity" step="0.1" value="0.5">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="inset-shadow">Inset Shadow :</label>
+        <input type="checkbox" id="inset-shadow" >
+      </div>
+      
+      <div class="color-wrapper">
+        <label for="shadow-color">Shadow Color :</label>
+        <input type="color" id="shadow-color">
+      </div>
+    </div>
+
+    <div class="code-container">
+      <textarea id="styles"rows="2"></textarea>
+      <button id="copy-styles" onclick="copyStyles()">Copy Styles</button>
+      </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
